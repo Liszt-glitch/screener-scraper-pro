@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div id="error" class="errors"></div>
+    <div class="wrapper">
+      <div class="title">Login Form</div>
+      <form id="form" action="#" method="get" autocomplete="on">
+        <div class="field">
+          <input type="email" name="Enter your full name" id="email" required />
+          <label>Email or phone number</label>
+        </div>
+        <div class="field">
+          <input type="password" name="password" id="password" required />
+          <label>Password</label>
+        </div>
+        <div class="content">
+          <div class="checkbox">
+            <input type="checkbox" id="remember-me" />
+            <label for="remember-me">Remember me</label>
+          </div>
+          <div class="pass-link"><a href="#">Forgot password?</a></div>
+        </div>
+        <div class="field">
+          <input
+            type="submit"
+            value="Login"
+            class="submit-btn"
+            onclick="auth()"
+          />
+        </div>
+        <div class="signup-link">
+          Create new account? <a href="#">Signup now</a>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+body {
+  display: flex;
+  margin: 0;
+  font-size: clamp(0.5rem, 2.5vw, 10rem);
+}
+
+/* container-box */
+
+.box {
+  background: rgb(102, 0, 255);
+  width: 200px;
+  height: 200px;
+}

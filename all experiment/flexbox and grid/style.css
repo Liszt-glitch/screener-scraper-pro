@@ -1,0 +1,60 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 500px 1fr;
+  grid-template-rows: 100px 200px;
+  place-items: center;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.drop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 500px 1fr;
+  grid-template-rows: 100px 200px;
+  place-items: center;
+}
+
+.drop {
+  animation: dropIn 1s ease forwards;
+}
+@keyframes dropIn {
+  from {
+    transform: translateY(-500px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+video {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
+/* code reduction */
+article {
+  width: clamp(200px, 50%, 600px);
+}
+
+@media only screen and (max-width: 600px) {
+  article {
+    width: 200px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  article {
+    width: 800px;
+  }
+}

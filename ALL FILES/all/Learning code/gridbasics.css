@@ -1,0 +1,77 @@
+body {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: none;
+  grid-column: auto;
+  grid-row: auto;
+}
+
+.container {
+  display: grid / inline-grid;
+}
+
+
+.hero {
+
+  /* Padding Attributes */
+
+
+  /* remember by going clockwise first top then right bottom left */
+
+     /* all 4 sides */
+  padding: 10px;
+
+/* top & bottom left & right*/
+  padding: 10px 20px;
+
+       /* top  right bottom left */
+  padding: 10px 20px 30px 40px;
+
+  /* margin = empty space */
+}
+
+  /* set a side individually */
+
+.hero {
+  margin-top: 10px;
+  padding-left: 10px;
+}
+
+/* border */
+
+.hero {
+       /* size type color */
+  border: 1px solid black;
+}
+
+.first .second {
+  display: inline-block;
+  margin: 10px 0;
+}
+
+/* psuedo classes */
+
+button {
+  background-color: lightgreen;
+  transition: .3s ease all;
+
+}
+
+button:hover {
+  background-color: skyblue;
+  transition: .3s ease all;
+  transform: translateY(-5px);
+}
+
+div p:first-child {
+  color:green
+}
+
+div p:nth-child(2) {
+  color: red;
+
+  box-shadow: 0px 14px 19px -6px rgba(0,0,0,0.61);
+-webkit-box-shadow: 0px 14px 19px -6px rgba(0,0,0,0.61);
+-moz-box-shadow: 0px 14px 19px -6px rgba(0,0,0,0.61);
+}
+

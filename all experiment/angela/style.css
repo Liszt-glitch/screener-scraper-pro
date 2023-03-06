@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: url(https://static.vecteezy.com/system/resources/previews/004/553/124/non_2x/abstract-geometric-pattern-design-of-colorful-pattern-tech-style-artwork-background-present-for-layout-wallpaper-illustration-vector.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.loginbox {
+  width: 380px;
+  height: 500px;
+  background: #1f1f1f;
+  color: #fff8dc;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 50px);
+}
+
+h1 {
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.loginbox p {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+.loginbox input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.loginbox input[type="text"],
+input[type="password"] {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+.loginbox input[type="submit"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #8400ff;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.loginbox input[type="submit"]:hover {
+  cursor: pointed;
+  background: #ff4646;
+  color: #000;
+}
+
+input[type="submit"]:active {
+  transform: scale(0.9);
+}
+
+.loginbox a {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: rgb(217, 217, 217);
+}
+
+.loginbox a:hover {
+  color: #ffc107;
+}
+
+.errors {
+  color: rgb(0, 0, 0);
+  padding-top: 30px;
+  font-size: 18px;
+}
+
+article {
+  width: clamp(200px, 50%, 600px);
+}
+
+@media only screen and (max-width: 600px) {
+  article {
+    width: 200px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  article {
+    width: 800px;
+  }
+}

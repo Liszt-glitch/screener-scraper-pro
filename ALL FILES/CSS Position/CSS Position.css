@@ -1,0 +1,19 @@
+.parent {
+  background-color: lightskyblue;
+  position: relative;
+  height: 900px;
+}
+
+.child-one {
+  background-color: lightgreen;
+  position: sticky;
+  top: 0;
+}
+
+.child-two {
+  background-color: lightcoral;
+}
+
+.child-three {
+  background-color: lightpink;
+}

@@ -1,0 +1,43 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  color: #ffffff;
+  padding: 10px;
+  padding-left: 150px;
+  font-size: 10rem;
+  font-style: italic;
+  position: relative;
+  margin-right: 10px;
+  margin-left: 50px;
+  margin-top: 10;
+  top: 10;
+  table-layout: fixed;
+  display: block;
+  display: inline;
+  font-display: auto;
+  text-align: left;
+  justify-self: auto;
+  display: flex;
+  font-family: serif;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 2rem;
+  text-align: center;
+
+  padding-right: 15px;
+  margin-left: 10px;
+
+  background-color: rgb(32, 32, 32);
+  background-image: url();
+  background-position: 0%;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  overflow: hidden;
+  overflow: hidden;
+}

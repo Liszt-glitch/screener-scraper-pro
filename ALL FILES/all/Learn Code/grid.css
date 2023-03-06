@@ -1,0 +1,81 @@
+*CSS GRID a guide from css tricks
+
+/* grid-template-column */
+/* grid-template-row */
+
+.container {
+  grid-template-columns: 25%;
+  grid-template-rows: 100px;
+}
+
+/* container */
+or /*inline-grid*/
+
+.container {
+  display: grid;
+}
+
+/* grid-template-areas */
+
+.container {
+  grid-template-areas: none;
+}
+
+/* column-gap, row-gap,gap */
+
+.container {
+  column-gap: 10px;
+  row-gap: 10px;
+  gap: 10px;
+}
+
+/* justify-content */
+
+.container {
+  justify-content: start / end / center / stretch / space-around / space-between /
+    space-evenly;
+}
+
+/* align-content */
+
+.container {
+  align-content: start / end / center / stretch / space-around / space-between /
+    space-evenly;
+}
+
+/* justify-items */
+
+.container {
+  justify-items: start / end / center / stretch;
+}
+
+/* align-items */
+
+.container {
+  align-items: start / end / center / stretch;
+}
+
+/* grid-column, grid-row */
+
+.item {
+  grid-column: start end;
+  grid-row: span start end;
+}
+
+/* grid-area */
+
+.item {
+  grid-area: row start / column start / row end / column end / name;
+}
+
+/* justify-self */
+
+.item {
+  justify-self: start / end / center / stretch;
+}
+
+/* align-self */
+
+.item {
+  align-self: start / end / center / stretch;
+}
