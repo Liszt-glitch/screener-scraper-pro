@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Scroll Snapping</title>
+		<link rel="stylesheet" href="style.css" />
+		<script defer src="app.js"></script>
+	</head>
+	<body>
+		<div>
+			<nav class="nav-bar">
+				<ul>
+					<li><a class="active" href="index.html">Home</a></li>
+					<li><a href="#">About Us</a></li>
+					<li><a href="#">Contact Us</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="container">
+			<section class="one">
+				<h1>First Page</h1>
+			</section>
+			<section class="two">
+				<h1>Second Page</h1>
+			</section>
+			<section class="three">
+				<h1>Third Page</h1>
+			</section>
+			<section class="four">
+				<h1>Four Page</h1>
+			</section>
+		</div>
+
+		<div class="container">
+			<section class="one">
+				<h1>First Page</h1>
+			</section>
+			<section class="two">
+				<h1>Second Page</h1>
+			</section>
+			<section class="three">
+				<h1>Third Page</h1>
+			</section>
+			<section class="four">
+				<h1>Four Page</h1>
+			</section>
+		</div>
+		<!-- ===image=== -->
+		<div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+			<div>
+				<a draggable="false" href="blog.html"
+					><img class="image" src="imgs/gian.jpg" draggable="false"
+				/></a>
+			</div>
+			<div>
+				<a draggable="false" href="ric.html"
+					><img class="image" src="imgs/ric.jpg" draggable="false"
+				/></a>
+			</div>
+			<div>
+				<a draggable="false" href="tyron.html"
+					><img class="image" src="imgs/tyron.jpeg" draggable="false"
+				/></a>
+			</div>
+			<div>
+				<img class="image" src="imgs/tombocon.jpg" draggable="false" />
+			</div>
+			<div>
+				<img class="image" src="imgs/perlas.jpg" draggable="false" />
+			</div>
+			<div>
+				<img class="image" src="imgs/nuesca.jpg" draggable="false" />
+			</div>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+		<script type="text/javascript">
+			$(document).on('click', 'ul li', function () {
+				$(this).addClass('active').siblings().removeClass('active');
+			});
+		</script>
+	</body>
+</html>

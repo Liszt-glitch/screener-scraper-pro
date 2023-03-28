@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+
+html {
+	scroll-behavior: smooth;
+	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #e06c75;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: #98c379;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	padding-bottom: 40px;
+	text-align: center;
+}
+
+ul {
+	position: absolute;
+	top: -5%;
+	left: 50%;
+	transform: translate(-50%, 50%);
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+ul li {
+	list-style: none;
+	padding: 25px;
+	list-style-type: none;
+}
+
+ul li.active a {
+	color: white;
+}
+
+ul li a {
+	text-decoration: none;
+	font-weight: normal;
+	color: rgb(133, 133, 133);
+	font-size: 16px;
+	transition: 0.3s;
+}
+
+nav ul li a:hover {
+	color: white;
+
+	font-size: 17px;
+	transition: 0.3s;
+}
+
+a:active {
+	color: white;
+}
+
+/* =========================================================================== */
+
+body {
+	background-color: #131313;
+	color: rgb(232, 232, 232);
+	font-family: 'poppins', sans-serif;
+	padding: 0;
+	margin: auto;
+	max-width: fit-content;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+section {
+	display: grid;
+	place-items: center;
+	width: 800px;
+	text-align: justify;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1 {
+	text-align: center;
+	padding: 30px;
+}
+
+h2 {
+	text-align: center;
+}
+.hidden {
+	opacity: 0;
+	filter: blur(8px);
+	transform: translateX(-100%);
+	transition: all 1.2s;
+}
+
+.show {
+	opacity: 1;
+	filter: blur(0);
+	transform: translateX(0);
+}
+
+.logos {
+	display: flex;
+}
+
+.logo:nth-child(2) {
+	transition-delay: 200ms;
+}
+
+.logo:nth-child(3) {
+	transition-delay: 400ms;
+}
+
+.logo:nth-child(4) {
+	transition-delay: 600ms;
+}
+
+img {
+	height: 100%;
+	width: 150px;
+	object-fit: cover;
+}
+
+div img {
+	height: 190px;
+	width: 150px;
+	border-radius: 5px;
+	min-width: 100%;
+	overflow: hidden;
+	background-color: bisque;
+	border-radius: 10px;
+	padding: 0.2rem;
+	box-shadow: 12px 15px 21px -6px rgba(0, 0, 0, 0.7);
+	-webkit-box-shadow: 12px 15px 21px -6px rgba(0, 0, 0, 0.7);
+	-moz-box-shadow: 12px 15px 21px -6px rgba(0, 0, 0, 0.7);
+	cursor: pointer;
+	transform: scale(1);
+	transition: 0.5s ease-in-out;
+}
+
+img:hover {
+	transform: scale(1.2);
+}
+.logo {
+	margin: 20px;
+	height: 200px;
+	width: 150px;
+	display: flex;
+	align-items: center;
+}
+
+footer {
+	text-align: center;
+	background: rgb(255, 78, 78);
+	overflow: hidden;
+	width: 1400px;
+	height: 130px;
+	background-image: url(imgs/Logo\ Sixpack.png);
+	background-repeat: no-repeat;
+	background-size: 155px;
+}
+
+@media only screen and (max-width: 768px) {
+	nav ul {
+		position: relative;
+		top: unset;
+		left: unset;
+		transform: unset;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	nav ul li {
+		padding: 10px;
+	}
+
+	section {
+		width: 100%;
+		padding: 0 10px;
+	}
+
+	.logo {
+		height: 150px;
+		width: 120px;
+	}
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+
+	footer {
+		width: 100%;
+		background-size: contain;
+	}
+}

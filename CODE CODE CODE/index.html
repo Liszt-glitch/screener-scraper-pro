@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sixpack</title>
+		<link rel="icon" type="image/png" href="imgs/sixpack.png" />
+		<link rel="stylesheet" href="style.css" />
+		<script defer src="app.js"></script>
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	</head>
+	<body>
+		<div>
+			<nav class="nav-bar">
+				<ul>
+					<li><a class="active" href="index.html">Home</a></li>
+					<li><a href="#">About Us</a></li>
+					<li><a href="#">Contact Us</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<div class="container">
+			<p>
+				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad, minima
+				vitae ipsa aliquam, earum id doloribus eveniet facere sapiente officiis
+				consequuntur labore ducimus magni. Nostrum quidem dolore labore qui aut
+				alias eos, hic ullam obcaecati voluptatibus ipsum cum. Eligendi commodi
+				id consectetur possimus nostrum magni rem dolorum, dolore, fuga quis
+				tenetur optio praesentium veritatis eum molestias non nam temporibus
+				dolores animi enim explicabo. Aspernatur magni ipsum architecto aliquam
+				et vero totam excepturi explicabo mollitia optio perferendis officia,
+				asperiores sit reiciendis at voluptate cum laborum maiores nesciunt
+				doloribus voluptates sint. Eum unde exercitationem obcaecati animi
+				facere tenetur aperiam officiis corporis accusantium iusto? Officiis eos
+				voluptates sit eveniet, porro nemo accusantium, minima voluptatibus
+				facilis, voluptatem reiciendis. Dolore quibusdam dolor reprehenderit
+				soluta ad ratione nobis ab impedit vero? Voluptatibus nihil corporis
+				perspiciatis eveniet. Aperiam consequuntur saepe suscipit ullam, natus
+				praesentium dolorum, recusandae iusto dolorem iure repudiandae numquam
+				vel, laboriosam officiis illo quaerat. Fugiat necessitatibus eum ipsam,
+				quod minima fugit aperiam alias porro et similique iusto magnam delectus
+				animi, sapiente eligendi repellendus omnis quibusdam earum nostrum
+				expedita iste aliquid ullam. Obcaecati repellendus accusamus iure
+				voluptatum praesentium maxime, rerum ad sit, nesciunt quod blanditiis
+				adipisci amet minima ducimus ut aut nam facere iste similique explicabo?
+			</p>
+		</div>
+
+		<!-- ===image=== -->
+		<div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+			<div data-aos="fade-left" data-aos-duration="1900">
+				<a draggable="false" href="blog.html"
+					><img class="image" src="imgs/gian.jpg" draggable="false"
+				/></a>
+			</div>
+			<div data-aos="fade-left" data-aos-duration="1700">
+				<a draggable="false" href="ric.html"
+					><img class="image" src="imgs/ric.jpg" draggable="false"
+				/></a>
+			</div>
+			<div data-aos="fade-left" data-aos-duration="1500">
+				<a draggable="false" href="tyron.html"
+					><img class="image" src="imgs/tyron.jpeg" draggable="false"
+				/></a>
+			</div>
+			<div data-aos="fade-left" data-aos-duration="1200">
+				<img class="image" src="imgs/tombocon.jpg" draggable="false" />
+			</div>
+			<div data-aos="fade-left" data-aos-duration="1200">
+				<img class="image" src="imgs/perlas.jpg" draggable="false" />
+			</div>
+			<div data-aos="fade-left" data-aos-duration="1200">
+				<img class="image" src="imgs/nuesca.jpg" draggable="false" />
+			</div>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+		<script type="text/javascript">
+			$(document).on('click', 'ul li', function () {
+				$(this).addClass('active').siblings().removeClass('active');
+			});
+		</script>
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
+	</body>
+</html>

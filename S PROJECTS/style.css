@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Poppins:wght@300&display=swap');
+
+html,
+body,
+.main-container,
+.container {
+	scroll-behavior: smooth;
+	overflow-x: auto;
+	overflow-x: scroll;
+	scroll-snap-align: start;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+		Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+li {
+	list-style: none;
+	transition: all 0.4s;
+	z-index: 15;
+}
+
+li:hover {
+	transform: scale(1.1);
+}
+
+a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: black;
+}
+
+h1 {
+	font-size: 70px;
+	text-transform: uppercase;
+	font-family: 'Poppins', sans-serif;
+	letter-spacing: 10px;
+}
+
+h3 {
+	font-size: 30px;
+	font-family: 'Dancing Script', cursive;
+	font-weight: lighter;
+}
+
+p {
+	margin-top: 30px;
+	font-size: 14;
+	font-family: 'Poppins', sans-serif;
+}
+
+.btn {
+	margin-top: 20px;
+	display: inline-block;
+	padding: 10px 30px;
+	background-color: bisque;
+	letter-spacing: 5px;
+}
+
+.btn:hover {
+	transform: scale(0.95);
+	background-color: salmon;
+}
+
+img {
+	width: 100%;
+}
+
+.second--image {
+	margin-top: 100px;
+}
+
+.third--image {
+	margin-top: 100px;
+}
+.main-container {
+	width: 100vw;
+	height: 100vh;
+	overflow-x: scroll;
+	overflow-y: hidden;
+}
+
+#logo {
+	border: 1px solid black;
+	padding: 0 15px;
+}
+
+.main-nav {
+	position: fixed;
+	display: flex;
+	padding: 2em 4em;
+	z-index: 12;
+}
+
+.main-nav .ul__second {
+	position: fixed;
+	display: flex;
+	right: 4em;
+}
+
+.main-nav .ul__second li {
+	margin-left: 1.5em;
+}
+
+.main-nav .ul__second #border {
+	border: 1px solid black;
+	padding: 0 15px;
+	align-items: center;
+}
+
+.container {
+	width: 800vw;
+	display: flex;
+	flex-direction: row;
+}
+
+.container .home {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 8em;
+}
+
+.container .home .image {
+	width: 400px;
+	height: 600px;
+}
+
+.content {
+	margin-top: 50px;
+	margin-right: 100px;
+	text-align: center;
+	z-index: 10;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+/* -------------------------------------------------------------- */
+
+body,
+h1,
+h2,
+h3,
+p,
+blockquote {
+	margin: 0;
+	padding: 0;
+}
+
+.vertical-scroll::-webkit-scrollbar {
+	width: 2em;
+	height: 1em;
+}
+
+.vertical-scroll::-webkit-scrollbar-track {
+	background: hsl(120 75% 50% / 1);
+	border-radius: 100vw;
+	margin-block: 0.5em;
+}
+
+.vertical-scroll::-webkit-scrollbar-thumb {
+	background: hsl(120 100% 20% / 1);
+	border: 0.25em solid hsl(120 75% 50% / 1);
+	border-radius: 100vw;
+}
+
+.vertical-scroll::-webkit-scrollbar-thumb:hover {
+	background: hsl(120 100% 10% / 1);
+}
+
+/* Vertical scrolling */
+
+.vertical-scroll {
+	display: grid;
+	gap: 0.5em;
+	grid-auto-flow: column;
+	grid-auto-columns: 75%;
+	padding: 0.5em;
+	overflow-x: scroll;
+	background: #d3fdbe;
+	border-radius: 1em;
+	position: relative;
+}
+
+.vertical-scroll > div {
+	background: hsl(0 0% 90%);
+	border-radius: 1em;
+	border: 0.5em solid hsl(0 0% 60%);
+	padding: 1em;
+}
+
+article {
+	display: grid;
+}
+
+article > *:not(img) {
+	padding: 0 2rem;
+}
+
+.lead {
+	font-size: var(--fs-600);
+	line-height: 1.3;
+	max-width: 35ch;
+}
+
+.article-body {
+	columns: 2 30ch;
+	gap: 4rem;
+	max-width: 100ch;
+}
+
+.article-body > p:first-child::first-letter {
+	font-size: 5em;
+	float: left;
+	line-height: 1.1;
+	margin-right: 0.5rem;
+}
+
+.article-body > p:first-child::first-line {
+	font-weight: 523;
+}
+
+@media (min-width: 60em) {
+	article {
+		grid-template-columns: min(40%, 40rem) 1fr;
+	}
+
+	article > img {
+		grid-row: 1 / 4;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	article > *:not(img) {
+		grid-column: 1 / -1;
+	}
+}
+
+/* scroll snap */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+hmtl {
+	scroll-behavior: smooth;
+}
+
+.section1 {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	scroll-snap-align: start;
+}
+
+.container {
+	scroll-snap-type: y mandatory;
+	overflow-y: scroll;
+	height: 100vh;
+}
+
+.one {
+	background: rgb(36, 164, 138);
+}
+
+.two {
+	background: rgb(211, 79, 79);
+}
+
+.three {
+	background: rgb(67, 91, 175);
+}
+
+.four {
+	background: lightsalmon;
+}

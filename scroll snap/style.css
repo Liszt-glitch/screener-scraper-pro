@@ -1,0 +1,89 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+	overflow: hidden;
+}
+
+hmtl {
+	scroll-behavior: smooth;
+}
+
+section {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	scroll-snap-align: start;
+}
+
+.container {
+	scroll-snap-type: y mandatory;
+	overflow-y: scroll;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.one {
+	background: rgb(36, 164, 138);
+}
+
+.two {
+	background: rgb(211, 79, 79);
+}
+
+.three {
+	background: rgb(67, 91, 175);
+}
+
+.four {
+	background: lightsalmon;
+}
+
+img {
+	height: 460px;
+	width: 260px;
+	overflow: hidden;
+	object-fit: cover;
+	border-radius: 5px;
+}
+
+#image-track {
+	display: flex;
+	gap: 4vmin;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(0%, -50%);
+	user-select: none; /* -- Prevent image highlighting -- */
+	overflow: hidden;
+}
+
+#image-track > .image {
+	object-fit: cover;
+	width: 260px;
+	height: 460px;
+	overflow: hidden;
+}
+
+@media (min-aspect-ratio: 16/9) {
+	#load-no {
+		font-size: 1.6667vh;
+		line-height: 2.0833vh;
+	}
+}
+
+@media (max-aspect-ratio: 16/9) {
+	#load-no {
+		font-size: 0.9375vw;
+		line-height: 1.1719vw;
+	}
+}
+
+@media (max-width: 600px) {
+	.container {
+		height: 100%;
+	}
+}
